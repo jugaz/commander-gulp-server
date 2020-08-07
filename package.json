@@ -1,0 +1,34 @@
+{
+  "name": "commander-gulp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "build",
+    "commander server",
+    "commander",
+    "compile",
+    "gulp server",
+    "gulp-server",
+    "server",
+    "npm server",
+    "task server"
+  ],
+  "bin": {
+    "commander-gulp-server": "bin/server.js"
+  },
+  "scripts": {
+    "server": "node ./bin/server.js server \"8081\" --ser \"docs/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugaz/commander-gulp-server.git"
+  },
+  "author": "Jesús Antonio Ugaz Vegas",
+  "email":"jesusugazv@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jugaz/commander-gulp-server/issues"
+  },
+  "homepage": "https://github.com/jugaz/commander-gulp-server#readme"
+}
