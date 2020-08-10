@@ -4,13 +4,14 @@
   "description": "This project was created to help raise the server",
   "main": "./bin/server.js",
   "author": "Jesús Antonio Ugaz Vegas",
-  "email":"jesusugazv@gmail.com",
+  "email": "jesusugazv@gmail.com",
   "license": "ISC",
   "bin": {
     "commander-gulp-server": "bin/server.js"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3",
+    "browser-sync": "^2.26.12",
     "chalk": "^4.1.0",
     "commander": "^3.0.2",
     "commander-gulp-images": "git+https://github.com/jugaz/commander-gulp-images.git",
@@ -20,6 +21,8 @@
     "commander-gulp-watch": "git+https://github.com/jugaz/commander-gulp-watch.git",
     "figlet": "^1.5.0",
     "gulp": "^3.9.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
     "rimraf": "^3.0.0"
   },
