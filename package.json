@@ -1,6 +1,6 @@
 {
   "name": "commander-gulp-server",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "This project was created to help raise the server",
   "main": "./bin/server.js",
   "author": "Jesús Antonio Ugaz Vegas",
