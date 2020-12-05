@@ -1,15 +1,10 @@
 #!/usr/bin/env node
 
 var
-    gulp = require('gulp'),
-    mkdirp = require('mkdirp'),
-    debug = require('gulp-debug'),
     program = require('commander'),
     browserSync = require('browser-sync').create();
     rimraf = require('rimraf'),
-    util = require('gulp-util')
-
-;
+    util = require('gulp-util');
 
 
 
@@ -21,34 +16,7 @@ var options = {};
 program
     .version(
         'commander-gulp-server version: ' + require('../package.json').version + '\n'
-
     )
-    .option('-m, --mkdirp <path>', 'create folder', createFolder)
-    .option('-r, --rimraf <path>', 'delete folder', deleteFolder)
-
-
-/* ######################## CREATE FOLDERS ######################## */
-function createFolder(dir) {
-    mkdirp(dir, function (err) {
-        if (err) {
-            console.error(err)
-        } else {
-            console.log(dir)
-        }
-    })
-}
-
-
-/* ######################## DELETE FOLDERS ######################## */
-function deleteFolder(dir) {
-    rimraf(dir, function (err) {
-        if (err) {
-            console.error(err)
-        } else {
-            console.log(dir)
-        }
-    })
-}
 
 
 /* ######################## GULP TEMPLATES ######################## */

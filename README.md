@@ -1,6 +1,6 @@
 # Commander Gulp Server Dynamic
 
-<p>This project was created to help raise the server</p>
+<p>Servidor dinámicamente</p>
  
 ![commander: version (tag)](https://img.shields.io/badge/commander-v3.0.2-blue?style=for-the-badge)
 ![gulp: version (tag)](https://img.shields.io/badge/gulp-v3.9.1-orange?style=for-the-badge)
