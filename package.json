@@ -17,7 +17,7 @@
   },
   "scripts": {
     "preinstall": "node ./bin/pre-cli-server.js",
-    "server": "node ./bin/server.js server \"8081\" --ser \"docs/\""
+    "server": "node ./bin/server.js server \"8080\" --ser \"docs/\""
   },
   "keywords": [
     "server",
