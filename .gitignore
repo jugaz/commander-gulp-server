@@ -19,3 +19,4 @@ package-lock.json
 frontend/
 docs/
 gulpfile.js
+comandos.json
