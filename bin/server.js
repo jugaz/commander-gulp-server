@@ -3,7 +3,6 @@
 var
     program = require('commander'),
     browserSync = require('browser-sync').create();
-    rimraf = require('rimraf'),
     util = require('gulp-util');
 
 
