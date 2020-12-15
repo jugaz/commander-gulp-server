@@ -1,6 +1,6 @@
 {
   "name": "commander-gulp-server",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Servidor dinámicamente",
   "main": "./bin/server.js",
   "author": "Jesús Antonio Ugaz Vegas",
