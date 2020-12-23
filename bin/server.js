@@ -2,6 +2,7 @@
 
 var
     program = require('commander'),
+    path = require('path'),
     browserSync = require('browser-sync').create();
     util = require('gulp-util');
 
@@ -27,7 +28,7 @@ program
         var input = options.input || options.parent.rawArgs;
         var ouput = options.ouput || options.ser;
         input = input.filter(function (index, value) {
-            if (index.slice((index.lastIndexOf(".") - 1 >> 0) + 2) == input[3]) {
+            if (path.extname(index) == input[3]) {
                 return index;               
             }
         });
@@ -44,7 +45,8 @@ program
                 serveStaticOptions: {
                     extensions: [
                         "html",
-                        "css"
+                        "css",
+                        "js"
                     ]
                 }
             }            
