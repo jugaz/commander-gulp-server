@@ -4,7 +4,6 @@ var
     program = require('commander'),
     path = require('path'),
     browserSync = require('browser-sync').create();
-    util = require('gulp-util');
 
 
 
@@ -20,7 +19,7 @@ program
 
 
 /* ######################## GULP TEMPLATES ######################## */
-// node ./bin/server.js server \"8080\" --ser \"docs/\""'
+// node ./bin/server.js server \"8080\" --ser \"docs/\""
 program
     .command('server <dir>')
     .option("--ser [options]")
@@ -28,18 +27,15 @@ program
         var input = options.input || options.parent.rawArgs;
         var ouput = options.ouput || options.ser;
         input = input.filter(function (index, value) {
-            if (path.extname(index) == input[3]) {
+            if (path.extname(index) == isNaN(index)) {
                 return index;               
             }
         });
       
         return browserSync.init({
-            
-            
             port: parseInt(input),
-            
             watch: true,
-            open: false,
+            open: true,
             server: {
                 baseDir: ouput,
                 serveStaticOptions: {
