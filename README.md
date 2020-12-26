@@ -1,5 +1,5 @@
 # Commander Gulp Server Dynamic
-
+<style>.markdown-body pre code {cursor:auto}</style>
 <p>Servidor dinámicamente</p>
  
 ![commander: version (tag)](https://img.shields.io/badge/commander-v3.0.2-blue?style=for-the-badge)
@@ -27,3 +27,6 @@ $ commander-gulp-server server 'entry' --ser 'ouput'
   "server": "commander-gulp-server server \"8080\" --ser \"docs/\""
 }
 ```
+
+### Link
+https://jugaz.github.io/commander-gulp-server/
