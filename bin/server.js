@@ -28,32 +28,35 @@ program
         var ouput = options.ouput || options.ser;
         function error(){
             util.log("ERROR: No es valido el puerto")
-            util.log("ERROR: El puerto valido debe ser un número. Ejemplo:'8080'")
+            util.log("ERROR: El puerto valido debe ser un número. :'8080'")
         }
         input = input.filter(function (index, value) {
             if (path.extname(index) == isNaN(index)) {
                 return index;               
             }
-            else if (path.extname(index) != isNaN(index)) {
-                return error();               
-            }
         });
-      
-        return browserSync.init({
-            port: parseInt(input),
-            watch: true,
-            open: true,
-            server: {
-                baseDir: ouput,
-                serveStaticOptions: {
-                    extensions: [
-                        "html",
-                        "css",
-                        "js"
-                    ]
-                }
-            }            
-        });  
+
+        if(input.length === 0 || input === "undefine" ||  path.extname(index) !== isNaN(index) ) {
+            return util.log("Error: El puerto no existe o está activado. Debe ser un número: 'Ejemplo(8080)'")
+        }
+        else {
+            return browserSync.init({
+                port: parseInt(input),
+                watch: true,
+                open: true,
+                server: {
+                    baseDir: ouput,
+                    serveStaticOptions: {
+                        extensions: [
+                            "html",
+                            "css",
+                            "js"
+                        ]
+                    }
+                }            
+            });  
+        }
+       
     })
 
 program.parse(process.argv);
