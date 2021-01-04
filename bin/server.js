@@ -26,10 +26,7 @@ program
     .action((input, options) => {
         var input = options.input || options.parent.rawArgs;
         var ouput = options.ouput || options.ser;
-        function error(){
-            util.log("ERROR: No es valido el puerto")
-            util.log("ERROR: El puerto valido debe ser un número. :'8080'")
-        }
+    
         input = input.filter(function (index, value) {
             if (path.extname(index) == isNaN(index)) {
                 return index;               
