@@ -3,6 +3,7 @@
 var
     program = require('commander'),
     path = require('path'),
+    util = require('gulp-util'),
     browserSync = require('browser-sync').create();
 
 
@@ -33,7 +34,7 @@ program
             }
         });
 
-        if(input.length === 0 || input === "undefine" ||  path.extname(index) !== isNaN(index) ) {
+        if(input.length === 0 || input === "undefine") {
             return util.log("Error: El puerto no existe o está activado. Debe ser un número: 'Ejemplo(8080)'")
         }
         else {
